@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClickMiaw</title>
+    <!-- Favicon (Ganti href dengan URL gambar Anda) -->
+    <link rel="icon" href="miawmiawmiaw.png" />
+    <!-- Import Font Pixel (Press Start 2P) dari Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Angka-Achievment.css" />
+    <link rel="stylesheet" href="background.css" />
+    <link rel="stylesheet" href="mod.css" />
+    <link rel="stylesheet" href="easteregg.css" />
+  </head>
+  <body>
+    <!-- Efek Retro Overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Easter Egg Video Container -->
+    <div id="video-overlay">
+      <iframe
+        id="youtube-video"
+        width="560"
+        height="315"
+        src=""
+        style="border: 0"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+        "
+        allowfullscreen
+      ></iframe>
+      <button id="close-video">TUTUP</button>
+    </div>
+
+    <!-- Sound Easter Egg Container -->
+    <div id="sound-overlay">
+      <!-- Gambar default, nanti diganti lewat script -->
+      <img id="sound-img" src="" alt="Surprise!" />
+    </div>
+
+    <!-- Endgame Overlay -->
+    <div id="endgame-overlay">
+      <img id="endgame-img" src="EASTER.png" alt="Gambar Akhir" />
+    </div>
+
+    <!-- Achievement Collection Overlay (UI Baru) -->
+    <div id="achievement-overlay">
+      <div class="achievement-box">
+        <h3>COLLECTED EGGS</h3>
+        <div id="achievement-list"></div>
+        <button id="close-achievement">TUTUP</button>
+      </div>
+    </div>
+
+    <!-- Judul Website (Teks Pixel) -->
+    <div id="game-title">ClickMiaw</div>
+
+    <!-- Mod Menu Overlay -->
+    <div id="mod-overlay">
+      <div class="mod-box">
+        <h3>MOD MENU</h3>
+        <button id="btn-7m">Set 7 Juta</button>
+        <button id="btn-1oct">Set 1 Oktiliun</button>
+        <input type="text" id="mod-input-score" placeholder="Isi Score Bebas" />
+        <button id="btn-set-custom">Set Custom Score</button>
+        <button id="btn-add-achievement">Tambah Achievement (+1)</button>
+        <button id="btn-remove-achievement">Kurangi Achievement (-1)</button>
+        <input
+          type="text"
+          id="mod-input-achievement"
+          placeholder="Isi Achievement Bebas"
+        />
+        <button id="btn-set-custom-achievement">Set Custom Achievement</button>
+        <button id="btn-unlock-all-eggs">Unlock All Easter Eggs</button>
+        <button id="btn-close-mod">Tutup</button>
+      </div>
+    </div>
+
+    <!-- Gambar Utama -->
+    <!-- Ganti 'gambar1.png' dan 'gambar2.png' dengan nama file gambar Anda -->
+    <img id="click-img" src="download (2).jpeg" alt="Klik Saya" />
+
+    <!-- Running Text Footer -->
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <!-- Gambar kecil (ikon) -->
+        <img src="download (2).jpeg" alt="Icon" />
+        <!-- Ganti href dengan link tujuan (misal: Instagram/YouTube) -->
+        <a
+          href="https://www.tiktok.com/@kucing.asal.mars"
+          target="_blank"
+          style="color: inherit; text-decoration: none; pointer-events: auto"
+          >Created by Fillio Rasya Pahlevi</a
+        >
+      </div>
+    </div>
+
+    <!-- Progress Bar (Menempel di Bawah) -->
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="audio.js"></script>
+    <script src="Angka-Achievment.js"></script>
+    <script src="easter-egg.js"></script>
+    <script src="script.js"></script>
+    <script src="mod.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+/* Mod Menu Overlay */
+#mod-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+}
+
+.mod-box {
+  background: #222;
+  border: 4px solid #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+.mod-box h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.mod-box button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+  border: 2px solid #fff;
+  background: #444;
+  color: #fff;
+}
+
+.mod-box button:hover {
+  background: #666;
+}
+
+/* Tombol Tutup Spesifik */
+#btn-close-mod {
+  background: #ff4444 !important; /* Override warna default button */
+}
+
+/* Input Field Custom Score */
+#mod-input-score,
+#mod-input-achievement {
+  width: 85%;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: "Press Start 2P", cursive;
+}

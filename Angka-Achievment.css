@@ -1,0 +1,40 @@
+#score {
+  position: absolute;
+  bottom: 60px; /* Posisi di bawah */
+  right: 20px; /* Posisi di kanan */
+  z-index: 10;
+  font-family: "Press Start 2P", cursive; /* Font Pixel */
+  font-size: 2.5rem; /* Ukuran lebih kecil */
+  color: #fff;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  pointer-events: none;
+}
+
+#achievement {
+  position: absolute;
+  bottom: 20px; /* Posisi di bawah skor */
+  right: 20px;
+  z-index: 10;
+  font-family: "Press Start 2P", cursive; /* Font Pixel */
+  font-size: 0.8rem; /* Ukuran lebih kecil */
+  color: #fff;
+  text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+  pointer-events: auto; /* Agar bisa diklik */
+  cursor: pointer;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+  #score {
+    font-size: 1.5rem; /* Perkecil ukuran skor */
+    bottom: 50px; /* Naikkan sedikit agar tidak tertutup marquee */
+    right: 15px; /* Beri jarak dari pinggir */
+  }
+  #achievement {
+    font-size: 0.6rem; /* Perkecil ukuran achievement */
+    bottom: 25px;
+    right: 15px;
+  }
+}
